@@ -14,6 +14,7 @@ body {
 .container{
   max-width: 600px;
   margin: 0px auto;
+  position:ab
 }
 
 .card{
@@ -36,11 +37,13 @@ body {
   color: #ffffff;
 }
 
-.delete-btn{
-  text-align: right;
+.item-btn{
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
-.delete-btn button{
+.item-btn button{
   background-color: transparent;
   border: navajowhite;
   cursor: pointer;
@@ -169,4 +172,10 @@ input[type="radio"]{
 input[type="radio"]:checked ~ label{
   background: #005555;
   color: #ffffff;
+}
+
+.about-link{
+  position: fixed;
+  right: 15px;
+  bottom: 0px;
 }

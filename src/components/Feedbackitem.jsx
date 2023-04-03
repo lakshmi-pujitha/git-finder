@@ -5,12 +5,12 @@ import { FaTimes, FaEdit } from "react-icons/fa"
 import FeedbackContext from '../context/FeedbackContext';
 function Feedbackitem({item}) {
 
-  const {deleteFeedback} = useContext(FeedbackContext);
+  const {deleteFeedback, editFeedback} = useContext(FeedbackContext);
 
   return (
         <Card>
              <div className='item-btn'>
-              <button onClick={() => console.log(item.id)} className='edit'>
+              <button onClick={() => editFeedback(item)} className='edit'>
                   <FaEdit color='green'/>
               </button>
               <button onClick={() => deleteFeedback(item.id)} className='close'>
